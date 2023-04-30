@@ -7,20 +7,34 @@ let apiKey = "qbKdwndXqIJM4vEBQ9MxQZBzoJ8IBwfm";
 
 
 let submitSearch = document.getElementById("submitSearch");
+ 
 submitSearch.addEventListener("click",(event) => {
-    fetch(`${url}?api_key=${apiKey}&s=${searchWord.value}`).then((res) => {
-        return res.json();
-    }).then((gif) => {
-        console.log(gif);
-        image.src = gif.data.images.original.url;
-    }).catch((err) => {
-        console.error(err);
-        feedback.textContent = err.message; 
-    })
 
-    searchWord.value = "";
+    getGif(searchWord.value);
+
+    // fetch(`${url}?api_key=${apiKey}&s=${searchWord.value}`).then((res) => {
+    //     return res.json();
+    // }).then((gif) => {
+    //     console.log(gif);
+    //     image.src = gif.data.images.original.url;
+    // }).catch((err) => {
+    //     console.error(err);
+    //     feedback.textContent = err.message; 
+    // })
+
+    // searchWord.value = "";
 }); 
 
+
+async function getGif(search) {
+    try {
+        let res = await fetch(`${url}?api_key=${apiKey}&s=${searchWord.value}`)
+        let gif = await res.json();
+        image.src = gif.data.images.original.url;
+    } catch (err) {
+        console.error(err);
+    }
+}
 
 
 
