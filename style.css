@@ -1,72 +1,72 @@
 body {
-    background-color: #ffddff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: #ff80bf;
-    margin-bottom: 2rem;
-  }
-  
-  #inputContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    font-size: 1.2rem;
-    color: #ff80bf;
-    margin-bottom: 1rem;
-  }
-  
-  input[type="text"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    background-color: #ffe5ff;
-    color: #3d3d3d;
-    margin-bottom: 1rem;
-    width: 80%;
-    max-width: 400px;
-  }
-  
-  button {
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    background-color: #ff80bf;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #ff4d94;
-  }
-  
-  #imageContainer {
-    margin-top: 2rem;
-    border: 2px solid #ff80bf;
-    border-radius: 2rem;
-    overflow: hidden;
-  }
-  
-  #image {
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  
+  background-color: #F0F0F0; /* light gray */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1A3A63; /* dark blue */
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #1A3A63; /* dark blue */
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  background-color: #FFFFFF; /* white */
+  color: #3d3d3d;
+  margin-bottom: 1rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  background-color: #3C91E6; /* bright blue */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #7FB069; /* bright green */
+}
+
+#imageContainer {
+  margin-top: 2rem;
+  border: 2px solid #1A3A63; /* dark blue */
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#image {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
